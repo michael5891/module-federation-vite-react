@@ -1,0 +1,12 @@
+{
+    "name": "@demo/design-system",
+    "version": "1.0.0",
+    "type": "module",
+    "exports": {
+      ".": "./src/index.tsx"
+    },
+    "peerDependencies": {
+      "react": "^18.3.1"
+    }
+  }
+  
