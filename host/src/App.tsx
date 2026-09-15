@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import { of, tap } from 'rxjs';
 import './App.css';
 import Counter from './components/Counter';
+import { ErrorBoundary } from './components/ErrorBoundary'
 
 const Remote = lazy(
   // @ts-ignore
@@ -40,9 +41,11 @@ export default () => {
         </div>
       </div>
 
-      <Suspense fallback="loading...">
-        <Remote />
-      </Suspense>
+      <ErrorBoundary>
+        <Suspense fallback="loading...">
+          <Remote />
+        </Suspense>
+      </ErrorBoundary>
     </>
   );
 };
