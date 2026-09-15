@@ -18,10 +18,10 @@ dependencies:
 devDependencies:
   '@module-federation/dts-plugin':
     specifier: 2.7.0
-    version: 2.7.0(typescript@5.4.5)
+    version: 2.7.0(typescript@6.0.3)
   '@module-federation/vite':
     specifier: 1.18.0
-    version: 1.18.0(typescript@5.4.5)(vite@8.3.0)
+    version: 1.18.0(typescript@6.0.3)(vite@8.3.0)
   '@types/react':
     specifier: 18.2.79
     version: 18.2.79
@@ -29,11 +29,11 @@ devDependencies:
     specifier: 18.2.25
     version: 18.2.25
   '@vitejs/plugin-react':
-    specifier: 5.2.0
+    specifier: ^5.2.0
     version: 5.2.0(vite@8.3.0)
   typescript:
-    specifier: 5.4.5
-    version: 5.4.5
+    specifier: 6.0.3
+    version: 6.0.3
   vite:
     specifier: ^8.0.0
     version: 8.3.0
@@ -246,7 +246,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.6.0
     dev: true
 
-  /@module-federation/dts-plugin@2.7.0(typescript@5.4.5):
+  /@module-federation/dts-plugin@2.7.0(typescript@6.0.3):
     resolution: {integrity: sha512-mVKeGUf/7iqRMAFfikhsr2zXtA70WuzJdS1bPqqoeLQNRGXBLDjedcDG26RpIlsvuZcmIOqgN5Z6qw7Bh/HZUg==}
     peerDependencies:
       typescript: ^4.9.0 || ^5.0.0 || ^6.0.0
@@ -262,7 +262,7 @@ packages:
       adm-zip: 0.5.10
       isomorphic-ws: 5.0.0(ws@8.21.0)
       node-schedule: 2.1.1
-      typescript: 5.4.5
+      typescript: 6.0.3
       undici: 7.28.0
       ws: 8.21.0
     transitivePeerDependencies:
@@ -307,13 +307,13 @@ packages:
       exsolve: 1.0.8
     dev: true
 
-  /@module-federation/vite@1.18.0(typescript@5.4.5)(vite@8.3.0):
+  /@module-federation/vite@1.18.0(typescript@6.0.3)(vite@8.3.0):
     resolution: {integrity: sha512-jZ8ju/0bex3PXKIAXb71q1y5oTRhOMm6gtO7YbpQtr5rWZQdipTvNQWN/wfXBui1X0mfjWhkIDsrZ22tXNHPAg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      '@module-federation/dts-plugin': 2.7.0(typescript@5.4.5)
+      '@module-federation/dts-plugin': 2.7.0(typescript@6.0.3)
       '@module-federation/runtime': 2.7.0
       '@module-federation/sdk': 2.7.0
       vite: 8.3.0
@@ -777,6 +777,8 @@ packages:
       lightningcss-win32-arm64-msvc: 1.33.0
       lightningcss-win32-x64-msvc: 1.33.0
     dev: true
+    bundledDependencies:
+      - napi-wasm
 
   /long-timeout@0.1.1:
     resolution: {integrity: sha512-BFRuQUqc7x2NWxfJBCyUrN8iYUYznzL9JROmRz1gZ6KlOIgmoD+njPVbb+VNn2nGMKggMsK79iUNErillsrx7w==}
@@ -927,8 +929,8 @@ packages:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
     dev: false
 
-  /typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  /typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true

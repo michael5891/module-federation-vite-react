@@ -6,6 +6,9 @@ import { dependencies } from './package.json';
 
 export default defineConfig(({ mode }) => {
   const selfEnv = loadEnv(mode, process.cwd());
+  const reactRefreshHost =
+    selfEnv.VITE_REACT_REFRESH_HOST ?? 'http://localhost:4173';
+
   return {
     server: {
       fs: {
@@ -26,6 +29,7 @@ export default defineConfig(({ mode }) => {
           );
         },
       },
+      react({ reactRefreshHost }),
       federation({
         filename: 'remoteEntry.js',
         name: 'remote',
@@ -40,7 +44,6 @@ export default defineConfig(({ mode }) => {
           },
         },
       }),
-      react(),
     ],
   };
 });
