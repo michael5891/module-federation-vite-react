@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "vite --port 4174",
     "build": "tsc && vite build",
-    "preview": "npm run build && vite preview --port 4174",
-    "predev": "node ../../scripts/track-demo-run.js"
+    "preview": "npm run build && vite preview --port 4174"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -1,19 +1,16 @@
 {
   "name": "module-federation-vite-react",
   "version": "1.0.0",
-  "description": "Module Federation Vite + React is now possible",
+  "description": "Module Federation Vite + React Lab",
   "scripts": {
     "install:deps": "pnpm --filter module-federation-vite-react-* install",
     "postinstall:deps": "pnpm --filter module-federation-vite-react-* run build",
     "dev": "pnpm --filter module-federation-vite-react-* dev",
-    "build": "pnpm --filter module-federation-vite-react-* build",
-    "preview": "pnpm --filter module-federation-vite-react-* preview",
-    "predev": "node ../scripts/track-demo-run.js"
+    "build": "pnpm --filter module-federation-vite-react-* build"
   },
   "author": {
-    "name": "Giorgio Boa",
-    "email": "giorgiob.boa@gmail.com",
-    "url": "https://github.com/gioboa"
+    "name": "Michael Yakubov",
+    "email": "michael.yakubov.1985@gmail.com"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
